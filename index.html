@@ -1,66 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Content Cartel</title>
+
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
-background:#111;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0f0f0f;
 color:white;
+line-height:1.6;
+}
+
+header{
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#FFD700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:#FFD700;
+}
+
+.hero p{
+max-width:700px;
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FFD700;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#FFD700;
+font-size:40px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1b1b1b;
+padding:25px;
+border-radius:15px;
 text-align:center;
 }
-.hero{
-padding:80px 20px;
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
 }
-h1{
-font-size:55px;
-color:#00d4ff;
+
+.project{
+height:220px;
+background:#1b1b1b;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
 }
-h2{
-color:#00d4ff;
+
+.contact{
+text-align:center;
 }
-.services{
-padding:40px;
+
+.social-btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
 }
-.card{
-background:#222;
-margin:10px auto;
-padding:20px;
-max-width:500px;
-border-radius:10px;
+
+.whatsapp{
+background:#25D366;
+color:white;
 }
-.footer{
-padding:20px;
-background:#000;
+
+.instagram{
+background:#E1306C;
+color:white;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
 }
 </style>
 </head>
+
 <body>
 
-<div class="hero">
-<h1>THE CONTENT CARTEL</h1>
-<p>We Don't Just Post Content. We Build Brands.</p>
-</div>
+<header>
+<div class="logo">THE CONTENT CARTEL</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>We Don't Just Post Content. We Build Brands.</h1>
+<p>
+Helping businesses grow with social media marketing,
+video editing, content creation, branding and paid ads.
+</p>
+<a href="#contact" class="btn">Book Free Consultation</a>
+</section>
+
+<section id="about" class="section">
+<h2>About Us</h2>
+<p style="text-align:center;max-width:800px;margin:auto;">
+The Content Cartel is a full-service Social Media Marketing Agency
+focused on helping businesses generate attention, leads and sales
+through powerful content and growth strategies.
+</p>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2>
 
 <div class="services">
-<h2>Our Services</h2>
 
 <div class="card">Social Media Management</div>
 <div class="card">Video Editing</div>
 <div class="card">Content Shooting</div>
 <div class="card">Thumbnail Design</div>
 <div class="card">Content Writing</div>
+<div class="card">Brand Strategy</div>
 <div class="card">Instagram Growth</div>
 <div class="card">Facebook & Instagram Ads</div>
 <div class="card">Lead Generation</div>
-<div class="card">Brand Building</div>
 
 </div>
+</section>
 
-<div class="footer">
-<p>© 2026 The Content Cartel</p>
+<section id="portfolio" class="section">
+<h2>Portfolio</h2>
+
+<div class="portfolio">
+<div class="project">Project 1</div>
+<div class="project">Project 2</div>
+<div class="project">Project 3</div>
 </div>
+
+</section>
+
+<section id="contact" class="section contact">
+<h2>Contact Us</h2>
+
+<p>Ready to grow your brand?</p>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="social-btn whatsapp">
+WhatsApp Us
+</a>
+
+<a href="https://instagram.com/YOURUSERNAME" class="social-btn instagram">
+Instagram
+</a>
+
+</section>
+
+<footer>
+© 2026 The Content Cartel. All Rights Reserved.
+</footer>
 
 </body>
 </html>
